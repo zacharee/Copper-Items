@@ -2,6 +2,7 @@ package copper.items.items.copper.Items;
 
 import copper.items.items.copper.Items.Commands.Give;
 import copper.items.items.copper.Items.Listeners.Oxidize;
+import copper.items.items.copper.Items.Listeners.ResourcepackChecker;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
@@ -194,7 +195,7 @@ public final class CopperItems extends JavaPlugin {
         //getCommand("copperitems").setExecutor(new CopperItemsCommand(this));
 
         //getServer().getPluginManager().registerEvents(new CopperItemsListener(this), this);
-        //getServer().getPluginManager().registerEvents(new ResourcepackChecker(this), this);
+        getServer().getPluginManager().registerEvents(new ResourcepackChecker(this), this);
 
 
         Bukkit.getServer().getPluginManager().registerEvents(new Oxidize(this), this);

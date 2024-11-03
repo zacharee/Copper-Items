@@ -6,26 +6,35 @@ items:
     enable: true
     attack-damage: 9.5
     attack-speed: 0.8
+    material: iron
   hoe:
     enable: true
+    material: stone
   pickaxe:
     enable: true
+    material: stone
   shovel:
     enable: true
+    material: iron
   sword:
     enable: true
     attack-damage: 6.5
     attack-speed: 1.6
+    material: iron
 armor:
   helmet:
     enable: true
     armor: 2
+    material: iron
   chestplate:
     enable: true
     armor: 6
+    material: iron
   leggings:
     enable: true
     armor: 4
+    material: iron
   boots:
     enable: true
     armor: 2
+    material: iron

@@ -39,7 +39,7 @@ public class Oxidize implements Listener {
             int durability = maxDurability - badDurability - 1;
             int durabilitySmol = maxDurability / 5;
 
-            e.getPlayer().sendMessage(String.valueOf(durability));
+//            e.getPlayer().sendMessage(String.valueOf(durability));
 
             int customModelData = item.getItemMeta().getCustomModelData();
             String name = item.getItemMeta().getDisplayName();
@@ -51,17 +51,17 @@ public class Oxidize implements Listener {
 
             if (durability >= durabilitySmol * 4) {
                 customModelData = 1;
-                e.getPlayer().sendMessage("1");
+//                e.getPlayer().sendMessage("1");
             } else if (durability >= durabilitySmol * 3) {
                 if (!name.contains(ex)) {
                     newName = ex + name;
                     customModelData = 2;
 
-                    e.getPlayer().sendMessage("2");
+//                    e.getPlayer().sendMessage("2");
 
                     if (im instanceof ArmorMeta am){
                         am.setTrim(new ArmorTrim(getCustomTrimMaterial("copper_armor:custom_copper_exposed"), getCustomTrimPattern("copper_armor:custom_copper_exposed")));
-                        e.getPlayer().sendMessage("test");
+//                        e.getPlayer().sendMessage("test");
                     }
                 }
 

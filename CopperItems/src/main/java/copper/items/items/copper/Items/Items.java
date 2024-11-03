@@ -67,7 +67,7 @@ public class Items extends JavaPlugin {
     }
 
     private static void createCopperSword() {
-        ItemStack item = new ItemStack(Material.IRON_SWORD, 1);
+        ItemStack item = new ItemStack(MaterialConfig.materialFromConfig(config, MaterialConfig.MaterialSuffix.SWORD), 1);
         ItemMeta im = item.getItemMeta();
         im.setDisplayName(ChatColor.WHITE + CopperItems.getCurrentLang().getString("items.sword"));
         im.setItemName("copper_sword");
@@ -114,7 +114,7 @@ public class Items extends JavaPlugin {
     }
 
     private static void createCopperAxe() {
-        ItemStack item = new ItemStack(Material.IRON_AXE);
+        ItemStack item = new ItemStack(MaterialConfig.materialFromConfig(config, MaterialConfig.MaterialSuffix.AXE), 1);
         ItemMeta im = item.getItemMeta();
         im.setDisplayName(ChatColor.WHITE + CopperItems.getCurrentLang().getString("items.axe"));
         im.setItemName("copper_axe");
@@ -169,7 +169,7 @@ public class Items extends JavaPlugin {
     }
 
     private static void createCopperPickaxe() {
-        ItemStack item = new ItemStack(Material.STONE_PICKAXE, 1);
+        ItemStack item = new ItemStack(MaterialConfig.materialFromConfig(config, MaterialConfig.MaterialSuffix.PICKAXE), 1);
         ItemMeta im = item.getItemMeta();
         im.setDisplayName(ChatColor.WHITE + CopperItems.getCurrentLang().getString("items.pickaxe"));
         im.setItemName("copper_pickaxe");
@@ -190,7 +190,7 @@ public class Items extends JavaPlugin {
     }
 
     private static void createCopperShovel() {
-        ItemStack item = new ItemStack(Material.IRON_SHOVEL, 1);
+        ItemStack item = new ItemStack(MaterialConfig.materialFromConfig(config, MaterialConfig.MaterialSuffix.SHOVEL), 1);
         ItemMeta im = item.getItemMeta();
         im.setDisplayName(ChatColor.WHITE + CopperItems.getCurrentLang().getString("items.shovel"));
         im.setItemName("copper_shovel");
@@ -224,7 +224,7 @@ public class Items extends JavaPlugin {
     }
 
     private static void createCopperHoe() {
-        ItemStack item = new ItemStack(Material.STONE_HOE, 1);
+        ItemStack item = new ItemStack(MaterialConfig.materialFromConfig(config, MaterialConfig.MaterialSuffix.HOE), 1);
         ItemMeta im = item.getItemMeta();
         im.setDisplayName(ChatColor.WHITE + CopperItems.getCurrentLang().getString("items.hoe"));
         im.setItemName("copper_hoe");
@@ -266,7 +266,7 @@ public class Items extends JavaPlugin {
     }
 
     private static void createCopperHelmet() {
-        ItemStack item = new ItemStack(Material.IRON_HELMET, 1);
+        ItemStack item = new ItemStack(MaterialConfig.materialFromConfig(config, MaterialConfig.MaterialSuffix.HELMET), 1);
         ItemMeta im = item.getItemMeta();
         im.setDisplayName(ChatColor.WHITE + CopperItems.getCurrentLang().getString("armor.helmet"));
         im.setItemName("copper_helmet");
@@ -300,7 +300,7 @@ public class Items extends JavaPlugin {
     }
 
     private static void createCopperChestplate() {
-        ItemStack item = new ItemStack(Material.IRON_CHESTPLATE, 1);
+        ItemStack item = new ItemStack(MaterialConfig.materialFromConfig(config, MaterialConfig.MaterialSuffix.CHESTPLATE), 1);
         ItemMeta im = item.getItemMeta();
         im.setDisplayName(ChatColor.WHITE + CopperItems.getCurrentLang().getString("armor.chestplate"));
         im.setItemName("copper_chestplate");
@@ -330,7 +330,7 @@ public class Items extends JavaPlugin {
 
 
     private static void createCopperLeggings() {
-        ItemStack item = new ItemStack(Material.IRON_LEGGINGS, 1);
+        ItemStack item = new ItemStack(MaterialConfig.materialFromConfig(config, MaterialConfig.MaterialSuffix.LEGGINGS), 1);
         ItemMeta im = item.getItemMeta();
         im.setDisplayName(ChatColor.WHITE + CopperItems.getCurrentLang().getString("armor.leggings"));
         im.setItemName("copper_leggings");
@@ -358,7 +358,7 @@ public class Items extends JavaPlugin {
     }
 
     private static void createCopperBoots() {
-        ItemStack item = new ItemStack(Material.IRON_BOOTS, 1);
+        ItemStack item = new ItemStack(MaterialConfig.materialFromConfig(config, MaterialConfig.MaterialSuffix.BOOTS), 1);
         ItemMeta im = item.getItemMeta();
         im.setDisplayName(ChatColor.WHITE + CopperItems.getCurrentLang().getString("armor.boots"));
         im.setItemName("copper_boots");
